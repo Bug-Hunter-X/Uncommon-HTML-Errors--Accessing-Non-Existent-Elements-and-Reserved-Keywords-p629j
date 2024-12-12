@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Incorrect way to access a non-existent element
+    document.getElementById("myDiv").innerHTML = "Hello, world!";
+    //This will work, however it is not the best practice
+    document.querySelector("#myDiv").innerHTML = "Hello, world!";
+
+    //Another uncommon error is the use of reserved keywords as identifiers
+    let class = "myClass"; // class is a reserved keyword and should not be used as a variable name
+    let for = 10; // for is a reserved keyword and should not be used as a variable name
+  </script>
+</body>
+</html>
