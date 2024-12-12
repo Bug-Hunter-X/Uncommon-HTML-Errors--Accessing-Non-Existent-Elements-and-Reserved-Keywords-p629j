@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Correct way to access an element
+    const myDiv = document.getElementById("myDiv");
+    if (myDiv) {
+      myDiv.innerHTML = "Hello, world!";
+    } else {
+      console.error("Element with id 'myDiv' not found");
+    }
+
+    //Alternative and safer way using querySelector
+    const myDiv2 = document.querySelector("#myDiv");
+    if (myDiv2) {
+        myDiv2.innerHTML = "Hello, world! (using querySelector)";
+    } else {
+        console.error("Element with id 'myDiv' not found");
+    }
+
+    //Correct variable names
+    let myClass = "myClass";
+    let counter = 10;
+  </script>
+</body>
+</html>
